@@ -37,4 +37,4 @@ jobs:
 
       - name: Deploy network stack
         working-directory: cdk
-        run: npm run network:destroy -- -c environmentName=${{ github.event.inputs.environmentName }}
+        run: npm run network:deploy -- -c environmentName=${{ github.event.inputs.environmentName }}
