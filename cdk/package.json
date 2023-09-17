@@ -9,7 +9,7 @@
     "network:deploy": "cdk deploy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=com.myorg.NetworkApp\" --require-approval never",
     "network:destroy": "cdk destroy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=com.myorg.NetworkApp\" --force",
     "service:deploy": "cdk deploy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=com.myorg.ServiceApp\" --require-approval never",
-    "service:destroy": "cdk destroy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=com.myorg.ServiceApp\" --require-approval never"
+    "service:destroy": "cdk destroy --app \"./mvnw -e -q compile exec:java -Dexec.mainClass=com.myorg.ServiceApp\" --force"
   },
   "devDependencies": {
     "aws-cdk": "2.43.1"
