@@ -87,4 +87,4 @@ jobs:
         working-directory: cdk
         env:
           DOCKER_IMAGE_TAG: ${{ needs.build-and-publish.outputs.DOCKER_IMAGE_TAG }}
-        run: npm run service:deploy -- -c dockerImageTag=${DOCKER_IMAGE_TAG} -c environmentName=staging
+        run: npm run service:destroy -- -c dockerImageTag=${DOCKER_IMAGE_TAG} -c environmentName=staging
